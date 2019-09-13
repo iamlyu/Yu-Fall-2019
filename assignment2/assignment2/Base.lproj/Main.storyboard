@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My first app!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT1-Gj-YCp">
+                                <rect key="frame" x="265" y="485" width="238" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2O-8H-RsC">
+                                <rect key="frame" x="371.5" y="596" width="25" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="295-1e-TfW">
+                                <rect key="frame" x="371.5" y="660" width="25" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOB-Aw-gW5">
+                                <rect key="frame" x="307" y="293" width="154" height="59"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <state key="normal" title="Press Me"/>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqD-A7-jR6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Pk-ta-1IQ"/>
+                            <constraint firstItem="h2O-8H-RsC" firstAttribute="centerX" secondItem="iOB-Aw-gW5" secondAttribute="centerX" id="5GS-SC-PZW"/>
+                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="top" secondItem="iOB-Aw-gW5" secondAttribute="bottom" constant="133" id="6FG-Kw-AMO"/>
+                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="centerX" secondItem="iOB-Aw-gW5" secondAttribute="centerX" id="83r-yw-HYc"/>
+                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BYc-2W-W7s"/>
+                            <constraint firstItem="295-1e-TfW" firstAttribute="top" secondItem="h2O-8H-RsC" secondAttribute="bottom" constant="34" id="DXf-gc-Cd5"/>
+                            <constraint firstItem="295-1e-TfW" firstAttribute="centerX" secondItem="h2O-8H-RsC" secondAttribute="centerX" id="EtC-Xx-RPj"/>
+                            <constraint firstItem="h2O-8H-RsC" firstAttribute="top" secondItem="dT1-Gj-YCp" secondAttribute="bottom" constant="57" id="bY2-Ph-9aL"/>
+                            <constraint firstItem="295-1e-TfW" firstAttribute="centerX" secondItem="iOB-Aw-gW5" secondAttribute="centerX" id="es8-6A-0mK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="dT1-Gj-YCp" id="6cr-Us-cnT"/>
+                        <outlet property="text1" destination="h2O-8H-RsC" id="J2m-om-TCj"/>
+                        <outlet property="text2" destination="295-1e-TfW" id="HXV-IR-nlL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
