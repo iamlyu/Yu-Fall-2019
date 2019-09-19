@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,51 +15,70 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My first app!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT1-Gj-YCp">
-                                <rect key="frame" x="265" y="485" width="238" height="54"/>
+                                <rect key="frame" x="90" y="59" width="238" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2O-8H-RsC">
-                                <rect key="frame" x="371.5" y="596" width="25" height="30"/>
+                                <rect key="frame" x="20" y="242" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="295-1e-TfW">
-                                <rect key="frame" x="371.5" y="660" width="25" height="30"/>
+                                <rect key="frame" x="20" y="296" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOB-Aw-gW5">
-                                <rect key="frame" x="307" y="293" width="154" height="59"/>
+                                <rect key="frame" x="130" y="145" width="154" height="59"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <state key="normal" title="Press Me"/>
                                 <connections>
                                     <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqD-A7-jR6"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5er-Gh-eTt">
+                                <rect key="frame" x="20" y="353" width="374" height="363"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.27269057628594429" blue="0.42055756101305508" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Pk-ta-1IQ"/>
-                            <constraint firstItem="h2O-8H-RsC" firstAttribute="centerX" secondItem="iOB-Aw-gW5" secondAttribute="centerX" id="5GS-SC-PZW"/>
-                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="top" secondItem="iOB-Aw-gW5" secondAttribute="bottom" constant="133" id="6FG-Kw-AMO"/>
-                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="centerX" secondItem="iOB-Aw-gW5" secondAttribute="centerX" id="83r-yw-HYc"/>
-                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BYc-2W-W7s"/>
-                            <constraint firstItem="295-1e-TfW" firstAttribute="top" secondItem="h2O-8H-RsC" secondAttribute="bottom" constant="34" id="DXf-gc-Cd5"/>
-                            <constraint firstItem="295-1e-TfW" firstAttribute="centerX" secondItem="h2O-8H-RsC" secondAttribute="centerX" id="EtC-Xx-RPj"/>
-                            <constraint firstItem="h2O-8H-RsC" firstAttribute="top" secondItem="dT1-Gj-YCp" secondAttribute="bottom" constant="57" id="bY2-Ph-9aL"/>
-                            <constraint firstItem="295-1e-TfW" firstAttribute="centerX" secondItem="iOB-Aw-gW5" secondAttribute="centerX" id="es8-6A-0mK"/>
+                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="1Sz-m8-qqr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5er-Gh-eTt" secondAttribute="trailing" constant="20" id="5dA-fH-A7A"/>
+                            <constraint firstItem="h2O-8H-RsC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8mD-3J-KrF"/>
+                            <constraint firstItem="295-1e-TfW" firstAttribute="top" secondItem="h2O-8H-RsC" secondAttribute="bottom" constant="24" id="Dm9-Nz-hiW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h2O-8H-RsC" secondAttribute="trailing" constant="20" id="F3x-HW-FE1"/>
+                            <constraint firstItem="295-1e-TfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="G6m-RM-Nxt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iOB-Aw-gW5" secondAttribute="trailing" constant="130" id="ISC-i2-aP1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5er-Gh-eTt" secondAttribute="bottom" constant="20" id="JlF-Xq-VH4"/>
+                            <constraint firstItem="iOB-Aw-gW5" firstAttribute="top" secondItem="dT1-Gj-YCp" secondAttribute="bottom" constant="32" id="Q1b-Jd-R2l"/>
+                            <constraint firstItem="dT1-Gj-YCp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="b1u-U3-67L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="295-1e-TfW" secondAttribute="trailing" constant="20" id="cB3-cv-82X"/>
+                            <constraint firstItem="5er-Gh-eTt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dbW-al-pag"/>
+                            <constraint firstItem="5er-Gh-eTt" firstAttribute="top" secondItem="295-1e-TfW" secondAttribute="bottom" constant="27" id="dk8-V8-3Zc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dT1-Gj-YCp" secondAttribute="trailing" constant="86" id="jnd-RE-aN3"/>
+                            <constraint firstItem="h2O-8H-RsC" firstAttribute="top" secondItem="iOB-Aw-gW5" secondAttribute="bottom" constant="38" id="oLS-dD-Pqj"/>
+                            <constraint firstItem="295-1e-TfW" firstAttribute="top" secondItem="h2O-8H-RsC" secondAttribute="bottom" constant="24" id="qCV-Um-Dda"/>
+                            <constraint firstItem="5er-Gh-eTt" firstAttribute="top" secondItem="295-1e-TfW" secondAttribute="bottom" constant="27" id="qcc-fU-2rv"/>
+                            <constraint firstItem="iOB-Aw-gW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="qux-lW-uHZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="5er-Gh-eTt" secondAttribute="bottom" constant="20" id="uI8-x9-rwz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="inputTable" destination="5er-Gh-eTt" id="eTz-LV-hXG"/>
                         <outlet property="label1" destination="dT1-Gj-YCp" id="6cr-Us-cnT"/>
                         <outlet property="text1" destination="h2O-8H-RsC" id="J2m-om-TCj"/>
                         <outlet property="text2" destination="295-1e-TfW" id="HXV-IR-nlL"/>
@@ -67,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+            <point key="canvasLocation" x="136.23188405797103" y="114.94565217391305"/>
         </scene>
     </scenes>
 </document>
