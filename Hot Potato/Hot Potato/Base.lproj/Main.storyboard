@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HVD_Comic_Serif_Pro.otf">
+            <string>HVDComicSerifPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="Hot_Potato" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dZg-m7-iQa"/>
+                        <viewControllerLayoutGuide type="bottom" id="FiO-MS-7Pg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="aWZ-ca-y6z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-H1-ziR">
+                                <rect key="frame" x="57" y="302" width="300" height="122"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="40"/>
+                                <state key="normal" title="Tap-Potato" backgroundImage="number">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HUW-m9-Oz1" kind="show" id="dev-OU-wfZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hot Potato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIe-qe-0VJ">
+                                <rect key="frame" x="70" y="84" width="275" height="60"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="50"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVK-ak-ef3">
+                                <rect key="frame" x="57" y="160" width="300" height="122"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="40"/>
+                                <state key="normal" title="Quick-Play" backgroundImage="number">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4fm-GS-X5z" kind="show" id="nkl-F5-bGP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXC-dR-IYo">
+                                <rect key="frame" x="57" y="444" width="300" height="122"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="40"/>
+                                <state key="normal" title="Settings" backgroundImage="number">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gEt-mu-8t2" kind="show" id="zok-h8-qmU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="hotpotato" translatesAutoresizingMaskIntoConstraints="NO" id="ZBF-ef-buO">
+                                <rect key="frame" x="70" y="574" width="275" height="280"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FiO-MS-7Pg" firstAttribute="top" secondItem="ZBF-ef-buO" secondAttribute="bottom" constant="8" id="0DU-em-Cjy"/>
+                            <constraint firstItem="ZBF-ef-buO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="1XQ-XB-aBy"/>
+                            <constraint firstItem="vVK-ak-ef3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="3Ao-Ds-DXa"/>
+                            <constraint firstItem="AXC-dR-IYo" firstAttribute="top" secondItem="BDb-H1-ziR" secondAttribute="bottom" constant="20" id="BMU-vM-BGO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZBF-ef-buO" secondAttribute="trailing" constant="49" id="CRE-Ll-Hoj"/>
+                            <constraint firstItem="BDb-H1-ziR" firstAttribute="top" secondItem="vVK-ak-ef3" secondAttribute="bottom" constant="20" id="CrZ-jY-RTL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BDb-H1-ziR" secondAttribute="trailing" constant="37" id="FdW-pA-eVh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DIe-qe-0VJ" secondAttribute="trailing" constant="49" id="H4s-uW-CLf"/>
+                            <constraint firstItem="BDb-H1-ziR" firstAttribute="top" secondItem="vVK-ak-ef3" secondAttribute="bottom" constant="20" id="RLy-mv-q9K"/>
+                            <constraint firstItem="DIe-qe-0VJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="W6Z-LN-FGA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vVK-ak-ef3" secondAttribute="trailing" constant="37" id="Yfi-TR-tiA"/>
+                            <constraint firstAttribute="bottom" secondItem="aWZ-ca-y6z" secondAttribute="bottom" id="bzU-gT-gPC"/>
+                            <constraint firstItem="vVK-ak-ef3" firstAttribute="top" secondItem="DIe-qe-0VJ" secondAttribute="bottom" constant="16" id="eHm-AF-lyE"/>
+                            <constraint firstAttribute="trailing" secondItem="aWZ-ca-y6z" secondAttribute="trailing" id="f7w-Sb-fjU"/>
+                            <constraint firstItem="BDb-H1-ziR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="faz-RR-q7s"/>
+                            <constraint firstItem="AXC-dR-IYo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="mWR-aR-ucB"/>
+                            <constraint firstItem="vVK-ak-ef3" firstAttribute="top" secondItem="DIe-qe-0VJ" secondAttribute="bottom" constant="16" id="mgg-v9-pcn"/>
+                            <constraint firstItem="aWZ-ca-y6z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nYB-ob-nKB"/>
+                            <constraint firstItem="ZBF-ef-buO" firstAttribute="top" secondItem="AXC-dR-IYo" secondAttribute="bottom" constant="8" id="skx-mb-LuQ"/>
+                            <constraint firstItem="aWZ-ca-y6z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wG2-PZ-unZ"/>
+                            <constraint firstItem="AXC-dR-IYo" firstAttribute="top" secondItem="BDb-H1-ziR" secondAttribute="bottom" constant="20" id="wYB-VC-ZV4"/>
+                            <constraint firstItem="DIe-qe-0VJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="yNk-wn-3UX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AXC-dR-IYo" secondAttribute="trailing" constant="37" id="ygC-Oq-3Gk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="etc-jE-Hxv">
+            <objects>
+                <viewController id="gEt-mu-8t2" customClass="SettingsViewController" customModule="Hot_Potato" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="afK-jx-LEE"/>
+                        <viewControllerLayoutGuide type="bottom" id="vOV-2Y-WpS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z8F-wN-fHl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="zhP-3I-EL3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SHy-NX-0oK">
+                                <rect key="frame" x="330" y="501" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Taps Left?:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15v-fs-xLj">
+                                <rect key="frame" x="115" y="503" width="185" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minimum Taps:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mr7-bY-CSB">
+                                <rect key="frame" x="131" y="408" width="169" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quick-Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAx-Fw-3FF">
+                                <rect key="frame" x="92" y="76" width="231" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="40"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Time (seconds):" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uc1-W7-PSy">
+                                <rect key="frame" x="45" y="162" width="255" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="G3R-CZ-dS6">
+                                <rect key="frame" x="330" y="241" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" textAlignment="center" minimumFontSize="17" background="number" translatesAutoresizingMaskIntoConstraints="NO" id="pzX-OM-38w">
+                                <rect key="frame" x="320" y="133" width="67" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap-Potato" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IP-Cv-7sz">
+                                <rect key="frame" x="93" y="318" width="228" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="40"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Timer?:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAP-uS-HDi">
+                                <rect key="frame" x="151" y="243" width="149" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" textAlignment="center" minimumFontSize="17" background="number" translatesAutoresizingMaskIntoConstraints="NO" id="Kj7-Nf-SSP">
+                                <rect key="frame" x="320" y="375" width="67" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zhP-3I-EL3" secondAttribute="trailing" id="9bR-dx-abA"/>
+                            <constraint firstItem="zhP-3I-EL3" firstAttribute="leading" secondItem="z8F-wN-fHl" secondAttribute="leading" id="E62-fj-WJ7"/>
+                            <constraint firstItem="zhP-3I-EL3" firstAttribute="top" secondItem="z8F-wN-fHl" secondAttribute="top" id="bVP-ng-tGl"/>
+                            <constraint firstAttribute="bottom" secondItem="zhP-3I-EL3" secondAttribute="bottom" id="ixy-5m-Zcw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PJZ-nE-02w"/>
+                    <connections>
+                        <outlet property="quickPlayTimeText" destination="pzX-OM-38w" id="pUF-Tw-SRX"/>
+                        <outlet property="tapPotatoNumText" destination="Kj7-Nf-SSP" id="YQ7-Jw-vIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCa-Ij-nec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.72463768115949" y="112.5"/>
+        </scene>
+        <!--Quick Play View Controller-->
+        <scene sceneID="4lW-ca-Y5F">
+            <objects>
+                <viewController id="4fm-GS-X5z" customClass="QuickPlayViewController" customModule="Hot_Potato" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yNE-Ph-BBs"/>
+                        <viewControllerLayoutGuide type="bottom" id="ykt-xT-CYb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ok5-8u-HWJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FcX-SY-kwA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotpotato" translatesAutoresizingMaskIntoConstraints="NO" id="8Pn-4F-dvf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quick-Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVw-Cx-H8h">
+                                <rect key="frame" x="60" y="80" width="300" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="50"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wo-WU-1jH">
+                                <rect key="frame" x="57" y="360" width="300" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="40"/>
+                                <state key="normal" title="Start!" backgroundImage="number">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quickPlayStartButton:" destination="4fm-GS-X5z" eventType="touchUpInside" id="v69-AP-xtE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hotpotatoorig" translatesAutoresizingMaskIntoConstraints="NO" id="mQz-cP-gDJ">
+                                <rect key="frame" x="57" y="319" width="292" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FcX-SY-kwA" firstAttribute="top" secondItem="yNE-Ph-BBs" secondAttribute="bottom" id="2xB-Wq-xS3"/>
+                            <constraint firstItem="8Pn-4F-dvf" firstAttribute="leading" secondItem="Ok5-8u-HWJ" secondAttribute="leading" id="3FQ-XJ-ouQ"/>
+                            <constraint firstAttribute="trailing" secondItem="FcX-SY-kwA" secondAttribute="trailing" id="Aoy-4n-ShY"/>
+                            <constraint firstAttribute="bottom" secondItem="8Pn-4F-dvf" secondAttribute="bottom" id="FoN-vH-HKF"/>
+                            <constraint firstItem="8Pn-4F-dvf" firstAttribute="top" secondItem="yNE-Ph-BBs" secondAttribute="bottom" id="Ppx-0K-Ynv"/>
+                            <constraint firstAttribute="bottom" secondItem="FcX-SY-kwA" secondAttribute="bottom" id="TkB-hk-jlL"/>
+                            <constraint firstItem="FcX-SY-kwA" firstAttribute="leading" secondItem="Ok5-8u-HWJ" secondAttribute="leading" id="eX5-h6-y1O"/>
+                            <constraint firstAttribute="trailing" secondItem="8Pn-4F-dvf" secondAttribute="trailing" id="yBQ-Rl-tFj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8rq-gp-a7I"/>
+                    <connections>
+                        <outlet property="button1" destination="2wo-WU-1jH" id="ejD-Di-8Mh"/>
+                        <outlet property="coldpotato" destination="mQz-cP-gDJ" id="jrU-V7-da6"/>
+                        <outlet property="hotpotato" destination="8Pn-4F-dvf" id="nqT-9Y-i8R"/>
+                        <outlet property="label1" destination="bVw-Cx-H8h" id="mOu-XL-98r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAY-2r-LGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="813.61607142857144"/>
+        </scene>
+        <!--Tap Potato View Controller-->
+        <scene sceneID="EWw-Bk-4CR">
+            <objects>
+                <viewController id="HUW-m9-Oz1" customClass="TapPotatoViewController" customModule="Hot_Potato" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ngM-e9-ejl"/>
+                        <viewControllerLayoutGuide type="bottom" id="LmG-u9-F4Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Opb-Hn-63r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="mgN-Rq-deE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap-Potato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pD-ge-vPq">
+                                <rect key="frame" x="60" y="80" width="300" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="50"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nZ-08-xpS">
+                                <rect key="frame" x="57" y="361" width="300" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="40"/>
+                                <state key="normal" title="Start!" backgroundImage="number">
+                                    <color key="titleColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mgN-Rq-deE" secondAttribute="trailing" id="Kfk-ov-Smd"/>
+                            <constraint firstItem="mgN-Rq-deE" firstAttribute="leading" secondItem="Opb-Hn-63r" secondAttribute="leading" id="dKg-b7-wp9"/>
+                            <constraint firstAttribute="bottom" secondItem="mgN-Rq-deE" secondAttribute="bottom" id="onE-Zh-z77"/>
+                            <constraint firstItem="mgN-Rq-deE" firstAttribute="top" secondItem="ngM-e9-ejl" secondAttribute="bottom" id="vzW-5o-CwX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IPB-9o-neF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZl-8D-Dfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="814"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="hotpotato" width="400" height="400"/>
+        <image name="hotpotatoorig" width="207" height="276"/>
+        <image name="number" width="300" height="122"/>
+    </resources>
+</document>

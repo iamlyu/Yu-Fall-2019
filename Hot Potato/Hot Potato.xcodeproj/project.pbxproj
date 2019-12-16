@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8272F42B2398AECE000B2ED5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F42A2398AECE000B2ED5 /* AppDelegate.swift */; };
+		8272F42D2398AECE000B2ED5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F42C2398AECE000B2ED5 /* SceneDelegate.swift */; };
+		8272F42F2398AECE000B2ED5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F42E2398AECE000B2ED5 /* GameViewController.swift */; };
+		8272F4322398AECE000B2ED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8272F4302398AECE000B2ED5 /* Main.storyboard */; };
+		8272F4352398AECE000B2ED5 /* Hot_Potato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8272F4332398AECE000B2ED5 /* Hot_Potato.xcdatamodeld */; };
+		8272F4372398AED1000B2ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8272F4362398AED1000B2ED5 /* Assets.xcassets */; };
+		8272F43A2398AED1000B2ED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8272F4382398AED1000B2ED5 /* LaunchScreen.storyboard */; };
+		8272F4432398B231000B2ED5 /* HVD_Comic_Serif_Pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8272F4422398B231000B2ED5 /* HVD_Comic_Serif_Pro.otf */; };
+		8272F4472399C95B000B2ED5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F4462399C95B000B2ED5 /* SettingsViewController.swift */; };
+		8272F4492399C9DE000B2ED5 /* QuickPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F4482399C9DE000B2ED5 /* QuickPlayViewController.swift */; };
+		8272F44B2399C9ED000B2ED5 /* TapPotatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F44A2399C9ED000B2ED5 /* TapPotatoViewController.swift */; };
+		8272F44F2399DFF7000B2ED5 /* fireburning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8272F44E2399DFF7000B2ED5 /* fireburning.mp3 */; };
+		8272F45823A70B90000B2ED5 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F45723A70B90000B2ED5 /* UserSettings.swift */; };
+		8272F45C23A7626E000B2ED5 /* clockticking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8272F45B23A7626E000B2ED5 /* clockticking.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8272F4272398AECD000B2ED5 /* Hot Potato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hot Potato.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8272F42A2398AECE000B2ED5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8272F42C2398AECE000B2ED5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8272F42E2398AECE000B2ED5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8272F4312398AECE000B2ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8272F4342398AECE000B2ED5 /* Hot_Potato.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hot_Potato.xcdatamodel; sourceTree = "<group>"; };
+		8272F4362398AED1000B2ED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8272F4392398AED1000B2ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8272F43B2398AED1000B2ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8272F4422398B231000B2ED5 /* HVD_Comic_Serif_Pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HVD_Comic_Serif_Pro.otf; path = "../../../../../Downloads/HVD-Comic-Serif-Pro 2/HVD_Comic_Serif_Pro.otf"; sourceTree = "<group>"; };
+		8272F4462399C95B000B2ED5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8272F4482399C9DE000B2ED5 /* QuickPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPlayViewController.swift; sourceTree = "<group>"; };
+		8272F44A2399C9ED000B2ED5 /* TapPotatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapPotatoViewController.swift; sourceTree = "<group>"; };
+		8272F44E2399DFF7000B2ED5 /* fireburning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fireburning.mp3; path = ../../../../../Downloads/fireburning.mp3; sourceTree = "<group>"; };
+		8272F45723A70B90000B2ED5 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		8272F45B23A7626E000B2ED5 /* clockticking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = clockticking.mp3; path = "../../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/clockticking.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8272F4242398AECD000B2ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8272F41E2398AECD000B2ED5 = {
+			isa = PBXGroup;
+			children = (
+				8272F4292398AECD000B2ED5 /* Hot Potato */,
+				8272F4282398AECD000B2ED5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8272F4282398AECD000B2ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8272F4272398AECD000B2ED5 /* Hot Potato.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8272F4292398AECD000B2ED5 /* Hot Potato */ = {
+			isa = PBXGroup;
+			children = (
+				8272F45A23A7237F000B2ED5 /* ViewControllers */,
+				8272F45723A70B90000B2ED5 /* UserSettings.swift */,
+				8272F42C2398AECE000B2ED5 /* SceneDelegate.swift */,
+				8272F42A2398AECE000B2ED5 /* AppDelegate.swift */,
+				8272F4302398AECE000B2ED5 /* Main.storyboard */,
+				8272F44E2399DFF7000B2ED5 /* fireburning.mp3 */,
+				8272F4362398AED1000B2ED5 /* Assets.xcassets */,
+				8272F4382398AED1000B2ED5 /* LaunchScreen.storyboard */,
+				8272F43B2398AED1000B2ED5 /* Info.plist */,
+				8272F4332398AECE000B2ED5 /* Hot_Potato.xcdatamodeld */,
+				8272F4422398B231000B2ED5 /* HVD_Comic_Serif_Pro.otf */,
+				8272F45B23A7626E000B2ED5 /* clockticking.mp3 */,
+			);
+			path = "Hot Potato";
+			sourceTree = "<group>";
+		};
+		8272F45A23A7237F000B2ED5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8272F4462399C95B000B2ED5 /* SettingsViewController.swift */,
+				8272F42E2398AECE000B2ED5 /* GameViewController.swift */,
+				8272F4482399C9DE000B2ED5 /* QuickPlayViewController.swift */,
+				8272F44A2399C9ED000B2ED5 /* TapPotatoViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8272F4262398AECD000B2ED5 /* Hot Potato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8272F43E2398AED1000B2ED5 /* Build configuration list for PBXNativeTarget "Hot Potato" */;
+			buildPhases = (
+				8272F4232398AECD000B2ED5 /* Sources */,
+				8272F4242398AECD000B2ED5 /* Frameworks */,
+				8272F4252398AECD000B2ED5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hot Potato";
+			productName = "Hot Potato";
+			productReference = 8272F4272398AECD000B2ED5 /* Hot Potato.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8272F41F2398AECD000B2ED5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Luther Yu";
+				TargetAttributes = {
+					8272F4262398AECD000B2ED5 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8272F4222398AECD000B2ED5 /* Build configuration list for PBXProject "Hot Potato" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8272F41E2398AECD000B2ED5;
+			productRefGroup = 8272F4282398AECD000B2ED5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8272F4262398AECD000B2ED5 /* Hot Potato */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8272F4252398AECD000B2ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8272F43A2398AED1000B2ED5 /* LaunchScreen.storyboard in Resources */,
+				8272F4372398AED1000B2ED5 /* Assets.xcassets in Resources */,
+				8272F4432398B231000B2ED5 /* HVD_Comic_Serif_Pro.otf in Resources */,
+				8272F44F2399DFF7000B2ED5 /* fireburning.mp3 in Resources */,
+				8272F45C23A7626E000B2ED5 /* clockticking.mp3 in Resources */,
+				8272F4322398AECE000B2ED5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8272F4232398AECD000B2ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8272F4352398AECE000B2ED5 /* Hot_Potato.xcdatamodeld in Sources */,
+				8272F42F2398AECE000B2ED5 /* GameViewController.swift in Sources */,
+				8272F42B2398AECE000B2ED5 /* AppDelegate.swift in Sources */,
+				8272F44B2399C9ED000B2ED5 /* TapPotatoViewController.swift in Sources */,
+				8272F4472399C95B000B2ED5 /* SettingsViewController.swift in Sources */,
+				8272F45823A70B90000B2ED5 /* UserSettings.swift in Sources */,
+				8272F4492399C9DE000B2ED5 /* QuickPlayViewController.swift in Sources */,
+				8272F42D2398AECE000B2ED5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8272F4302398AECE000B2ED5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8272F4312398AECE000B2ED5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8272F4382398AED1000B2ED5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8272F4392398AED1000B2ED5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8272F43C2398AED1000B2ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8272F43D2398AED1000B2ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8272F43F2398AED1000B2ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F33T3NQBK;
+				INFOPLIST_FILE = "Hot Potato/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CS402.Hot-Potato";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8272F4402398AED1000B2ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3F33T3NQBK;
+				INFOPLIST_FILE = "Hot Potato/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CS402.Hot-Potato";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8272F4222398AECD000B2ED5 /* Build configuration list for PBXProject "Hot Potato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8272F43C2398AED1000B2ED5 /* Debug */,
+				8272F43D2398AED1000B2ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8272F43E2398AED1000B2ED5 /* Build configuration list for PBXNativeTarget "Hot Potato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8272F43F2398AED1000B2ED5 /* Debug */,
+				8272F4402398AED1000B2ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8272F4332398AECE000B2ED5 /* Hot_Potato.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8272F4342398AECE000B2ED5 /* Hot_Potato.xcdatamodel */,
+			);
+			currentVersion = 8272F4342398AECE000B2ED5 /* Hot_Potato.xcdatamodel */;
+			path = Hot_Potato.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8272F41F2398AECD000B2ED5 /* Project object */;
+}
